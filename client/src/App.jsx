@@ -1,10 +1,13 @@
 import './App.css'
+import { Nabvar } from './Navbar/Nabvar'
+// import { app } from '../src/firebase/firebase.js';
 
 function App() {
+  
   return (
     <>
       <div>
-        <h1>Sistema de Gestión de Empleados</h1>
+        <Nabvar />
       </div>
      
     </>
