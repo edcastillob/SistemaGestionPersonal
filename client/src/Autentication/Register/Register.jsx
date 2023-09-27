@@ -33,7 +33,14 @@ const handleSubmit = async(e) => {
         //    showMessage("Welcome: " + email, "success")
       
         console.log(userCredential)
-      
+        setData({
+            email: "",
+            password: "",
+        });
+
+        const signupModal = document.querySelector('#signupModal')
+        const modal = bootstrap.Modal.getInstance(signupModal)
+        modal.hide();
         } catch (error) {
             console.log(error)
         //   if (error.code === "auth/email-already-in-use") {    
@@ -54,7 +61,7 @@ const handleSubmit = async(e) => {
             <input name="email" value={data.email} onChange={handleChange} type="email" className="form-control mb-3" placeholder="Email" required />
             <label htmlFor="password">Password:</label>
             <input name="password" value={data.password} onChange={handleChange} type="password" className="form-control mb-3" placeholder="Password" required />
-            <button onClick={handleSubmit} className="btn btn-primary">Login</button>
+            <button onClick={handleSubmit} className="btn btn-primary">Register</button>            
         </form>
   )
 }

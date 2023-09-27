@@ -57,7 +57,14 @@ export const Nabvar = () => {
         <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div className="modal-body">
-        <Register />
+        
+        <form id="signin-form">
+            <label htmlFor="email">Email:</label>
+            <input type="email" className="form-control mb-3" placeholder="Email" required />
+            <label htmlFor="password">Password:</label>
+            <input type="password" className="form-control mb-3" placeholder="Password" required />
+            <button type="submit" className="btn btn-primary">Login</button>
+        </form>
       </div>
     </div>
   </div>
@@ -72,13 +79,7 @@ export const Nabvar = () => {
         <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div className="modal-body">
-      <form id="signup-form">
-            <label htmlFor="email">Email:</label>
-            <input type="email" className="form-control mb-3" placeholder="Email" required />
-            <label htmlFor="password">Password:</label>
-            <input type="password" className="form-control mb-3" placeholder="Password" required />
-            <button type="submit" className="btn btn-primary">Register</button>
-        </form>
+      <Register />
       </div>
     </div>
   </div>
