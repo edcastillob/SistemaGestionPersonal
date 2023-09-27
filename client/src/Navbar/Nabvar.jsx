@@ -1,10 +1,12 @@
 import { Register } from "../Autentication/Register/Register";
+import logo from '../assets/logo.png'
 
 export const Nabvar = () => {
   return (
     <div>
-      <nav className="navbar navbar-expand-lg bg-body-tertiary">
+      <nav className="navbar navbar-expand-lg" style={{ background: '#D3D3D3'}}>
         <div className="container-fluid">
+          <img src={logo} alt="Logo" style={{ width: '35px', height: '35px', marginRight: '10px' }} />
           <a className="navbar-brand" href="#">
             Sgp-Web
           </a>
