@@ -1,4 +1,5 @@
 import './App.css'
+import { Register } from './Autentication/Register/Register'
 import { Nabvar } from './Navbar/Nabvar'
 // import { app } from '../src/firebase/firebase.js';
 
@@ -8,6 +9,7 @@ function App() {
     <>
       <div>
         <Nabvar />
+        {/* <Register /> */}
       </div>
      
     </>

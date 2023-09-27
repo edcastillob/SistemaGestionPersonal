@@ -1,3 +1,5 @@
+import { Register } from "../Autentication/Register/Register";
+
 export const Nabvar = () => {
   return (
     <div>
@@ -55,11 +57,7 @@ export const Nabvar = () => {
         <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div className="modal-body">
-        ...
-      </div>
-      <div className="modal-footer">
-        <button type="button" className="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" className="btn btn-primary">Save changes</button>
+        <Register />
       </div>
     </div>
   </div>
@@ -74,11 +72,13 @@ export const Nabvar = () => {
         <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div className="modal-body">
-        ...
-      </div>
-      <div className="modal-footer">
-        <button type="button" className="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" className="btn btn-primary">Save changes</button>
+      <form id="signup-form">
+            <label htmlFor="email">Email:</label>
+            <input type="email" className="form-control mb-3" placeholder="Email" required />
+            <label htmlFor="password">Password:</label>
+            <input type="password" className="form-control mb-3" placeholder="Password" required />
+            <button type="submit" className="btn btn-primary">Register</button>
+        </form>
       </div>
     </div>
   </div>
